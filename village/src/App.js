@@ -34,7 +34,7 @@ class App extends Component {
       <div className="App">
         <div>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/SmurfForm">Add Smurf</NavLink>
+          <NavLink to="/SmurfForm">Add to the village</NavLink>
         </div>
         <div>
           <Route
@@ -56,8 +56,6 @@ class App extends Component {
               return (<SmurfForm{...props} add={this.addSmurf} {...props} />);
             }} />
         </div>
-        <SmurfForm />
-        <Smurfs smurfs={this.state.smurfs} />
       </div>
     );
   }
