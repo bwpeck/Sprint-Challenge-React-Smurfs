@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+let url = 'http://localhost:3333/smurfs';
 
 class SmurfForm extends Component {
   constructor(props) {
